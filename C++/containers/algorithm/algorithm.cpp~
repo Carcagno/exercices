@@ -1,0 +1,14 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main()
+{
+  std::string sentence {"This is an example of sentence !\n"};
+  
+  auto total_sentence {std::count(std::begin(setence), std::end(sentence), 'n')};
+  
+  std::cout << "The sentence :\n\"" << sentence << "\"\nHas " << total_sentence << " \'n\'" << std::endl;
+
+  return 0;
+}

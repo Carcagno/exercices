@@ -1,0 +1,7 @@
+#include <iostreams>
+
+int main()
+{
+  
+  return (0);
+}
