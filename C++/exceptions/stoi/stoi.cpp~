@@ -1,0 +1,42 @@
+#include <iostream>
+#include <stdexept>
+#include <string>
+
+int check_cin(std::string &number)
+{
+  while (!(std::cin >> number))
+    {
+      std::cout << "Wrong entrie, try again please" << std::endl;
+      std::cin.clear();
+      std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+  return (0);
+}
+
+void caller()
+{
+  int number_int{};
+  std::string number{};
+
+  try
+    {
+      check_cin >> number;
+      std::stoi(number);
+    }
+  catch (std::invalid_argument const & exception)
+    {
+
+    }
+  catch (std::out_of_range const & exception)
+    {
+      
+    }
+  
+
+}
+
+int main()
+{
+  
+  return (0);
+}
